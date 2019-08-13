@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddressListComponent } from './components/address-list/address-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule, MatListModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatCardModule} from '@angular/material';
+import { MatButtonModule, MatIconModule, MatListModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatCardModule, MatDialogModule} from '@angular/material';
 import { from } from 'rxjs';
 import { AddressDetailComponent } from './components/address-detail/address-detail.component';
+import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -15,7 +15,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   declarations: [
     AppComponent,
     AddressListComponent,
-    AddressDetailComponent
+    AddressDetailComponent,
+    DeleteModalComponent
+  ],
+  entryComponents: [
+    DeleteModalComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
