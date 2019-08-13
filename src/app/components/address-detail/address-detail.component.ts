@@ -21,7 +21,7 @@ export class AddressDetailComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The Dialog was closed', result);
-    })
+    });
   }
 
 }

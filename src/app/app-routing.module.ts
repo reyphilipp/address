@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'list/new',
-    component: AddressListComponent
+    component: AddressDetailComponent
   },
   {
     path: 'list/:addressId',
