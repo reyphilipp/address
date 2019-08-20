@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddressListComponent } from './components/address-list/address-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule, MatListModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatCardModule, MatDialogModule} from '@angular/material';
+import { MatButtonModule, MatIconModule, MatListModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatCardModule, MatDialogModule, MatSnackBarModule} from '@angular/material';
 import { from } from 'rxjs';
 import { AddressDetailComponent } from './components/address-detail/address-detail.component';
 import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
@@ -36,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

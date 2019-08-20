@@ -1,6 +1,7 @@
-import { DeleteModalComponent } from './../delete-modal/delete-modal.component';
+import { BackendService } from './../services/backend.service';
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { Observable } from 'rxjs';
+import { Address } from 'src/app/models/address';
 
 @Component({
   selector: 'app-address-list',
@@ -8,10 +9,12 @@ import { MatDialog } from '@angular/material';
   styleUrls: ['./address-list.component.css']
 })
 export class AddressListComponent implements OnInit {
+  addresses$: Observable<Address[]>;
 
-  constructor() { }
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.addresses$ = this.backend.getAllAddresses();
   }
 
 }
