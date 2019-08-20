@@ -3,33 +3,33 @@
     <mat-card-header>
       <mat-card-title>AddressDetails</mat-card-title>
     </mat-card-header>
-
-    <mat-card-content fxLayout="column">
-
-      <mat-form-field appreance="outline" fxFlex>
-        <mat-label>Name</mat-label>
-        <input matInput type="text" placeholder="Name">
-      </mat-form-field>
-
-      <mat-form-field appreance="outline" fxFlex>
-          <mat-label>Street</mat-label>
-          <input matInput type="text" placeholder="Street">
-      </mat-form-field>
-
-      <div fxLayout="row" fxLayoutGap="10px">
+    <mat-card-content>
+    <form [formGroup]="form" fxLayout="column">
         <mat-form-field appreance="outline" fxFlex>
-          <mat-label>Postcode</mat-label>
-          <input matInput type="text" placeholder="Postcode">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" type="text" placeholder="Name">
         </mat-form-field>
-        <mat-form-field appreance="outline" fxFlex>
-            <mat-label>City</mat-label>
-            <input matInput type="text" placeholder="City">
-        </mat-form-field>
-      </div>
 
+        <mat-form-field appreance="outline" fxFlex>
+            <mat-label>Street</mat-label>
+            <input matInput formControlName="street" type="text" placeholder="Street">
+        </mat-form-field>
+
+        <div fxLayout="row" fxLayoutGap="10px">
+          <mat-form-field appreance="outline" fxFlex>
+            <mat-label>Postcode</mat-label>
+            <input matInput formControlName="postcode" type="text" placeholder="Postcode">
+          </mat-form-field>
+          <mat-form-field appreance="outline" fxFlex>
+              <mat-label>City</mat-label>
+              <input matInput formControlName="city" type="text" placeholder="City">
+          </mat-form-field>
+        </div>
+      </form>
       <div fxLayoutGap="10px" fxLayout="row">
-        <button mat-raised-button color="warn" (click)="onDelete()"><mat-icon>delete</mat-icon>Remove</button>
-        <button mat-raised-button><mat-icon>add</mat-icon>Save</button>
+        <button mat-raised-button *ngIf="exists" color="warn" (click)="onDelete(form)"><mat-icon>delete</mat-icon>Remove</button>
+        <button mat-raised-button *ngIf="exists" [disabled]="form.invalid" (click)="onUpdate(form)"><mat-icon>save</mat-icon>Save</button>
+        <button mat-raised-button *ngIf="!exists" [disabled]="form.invalid" (click)="onCreate(form)"><mat-icon>add</mat-icon>Add</button>
       </div>
     </mat-card-content>
   </mat-card>
