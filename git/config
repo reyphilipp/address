@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "orogin"]
+	url = https://github.com/reyphilipp/address
+	fetch = +refs/heads/*:refs/remotes/orogin/*
+[remote "origin"]
+	url = https://github.com/reyphilipp/address
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "develop20190820"]
+	remote = origin
+	merge = refs/heads/develop20190820
+[remote "develop20190820"]
+	url = https://github.com/reyphilipp/address
+	fetch = +refs/heads/*:refs/remotes/develop20190820/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

@@ -1,0 +1,20 @@
+0000000000000000000000000000000000000000 7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 reyphilipp <reyphilipp@freenet.de> 1565721082 +0200	commit (initial): initial commit
+7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 reyphilipp <reyphilipp@freenet.de> 1565721473 +0200	checkout: moving from master to develop
+7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 f84a1a0c64066ffca8b54eba0747a18fc58206d1 reyphilipp <reyphilipp@freenet.de> 1565722063 +0200	commit: Add components addressList
+f84a1a0c64066ffca8b54eba0747a18fc58206d1 02db30bafed6015313854f4d6846e93f25c0408b reyphilipp <reyphilipp@freenet.de> 1565725970 +0200	commit: Add AddresDetails
+02db30bafed6015313854f4d6846e93f25c0408b dabb6158e285975baeed1feb2476a02faad55e10 reyphilipp <reyphilipp@freenet.de> 1565727528 +0200	commit: Add DeleteModal
+dabb6158e285975baeed1feb2476a02faad55e10 1f836e189636e34199da83d3cc1a64c30a97395a reyphilipp <reyphilipp@freenet.de> 1565728142 +0200	commit: End Design
+1f836e189636e34199da83d3cc1a64c30a97395a 7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 reyphilipp <reyphilipp@freenet.de> 1565728391 +0200	checkout: moving from develop to master
+7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 1f836e189636e34199da83d3cc1a64c30a97395a reyphilipp <reyphilipp@freenet.de> 1565728417 +0200	merge develop: Fast-forward
+1f836e189636e34199da83d3cc1a64c30a97395a 1f836e189636e34199da83d3cc1a64c30a97395a reyphilipp <reyphilipp@freenet.de> 1566325578 +0200	checkout: moving from master to develop20190820
+1f836e189636e34199da83d3cc1a64c30a97395a 483da7a4aff262f67496f4c0e1f5725fc5db504b reyphilipp <reyphilipp@freenet.de> 1566325692 +0200	commit: Add Model
+483da7a4aff262f67496f4c0e1f5725fc5db504b 52d31de8141124f16b969e9b970b034dfbe021a4 reyphilipp <reyphilipp@freenet.de> 1566326946 +0200	commit: Add Service
+52d31de8141124f16b969e9b970b034dfbe021a4 542a3066a22cfbca37ecd49c720f7a1d87e67f4f reyphilipp <reyphilipp@freenet.de> 1566330691 +0200	commit: Edit Details and List
+542a3066a22cfbca37ecd49c720f7a1d87e67f4f 1f836e189636e34199da83d3cc1a64c30a97395a reyphilipp <reyphilipp@freenet.de> 1566331271 +0200	checkout: moving from develop20190820 to master
+1f836e189636e34199da83d3cc1a64c30a97395a 542a3066a22cfbca37ecd49c720f7a1d87e67f4f reyphilipp <reyphilipp@freenet.de> 1566331297 +0200	merge develop20190820: Fast-forward
+542a3066a22cfbca37ecd49c720f7a1d87e67f4f 751863cd6982dc4d2d0583f0aca4ee6893889468 reyphilipp <reyphilipp@freenet.de> 1566331698 +0200	commit: CRUD Finish
+751863cd6982dc4d2d0583f0aca4ee6893889468 36fe6e3dc8cec5065eea378c32fc4fb9b41eab03 reyphilipp <reyphilipp@freenet.de> 1566334434 +0200	commit (amend): Finish
+36fe6e3dc8cec5065eea378c32fc4fb9b41eab03 36fe6e3dc8cec5065eea378c32fc4fb9b41eab03 reyphilipp <reyphilipp@freenet.de> 1566335156 +0200	checkout: moving from master to master
+36fe6e3dc8cec5065eea378c32fc4fb9b41eab03 542a3066a22cfbca37ecd49c720f7a1d87e67f4f reyphilipp <reyphilipp@freenet.de> 1566335164 +0200	checkout: moving from master to develop20190820
+542a3066a22cfbca37ecd49c720f7a1d87e67f4f b5185632a83d687092eef449b1816403f2eb0f27 reyphilipp <reyphilipp@freenet.de> 1566335193 +0200	commit (amend): Finish
+b5185632a83d687092eef449b1816403f2eb0f27 36fe6e3dc8cec5065eea378c32fc4fb9b41eab03 reyphilipp <reyphilipp@freenet.de> 1566335465 +0200	checkout: moving from develop20190820 to master

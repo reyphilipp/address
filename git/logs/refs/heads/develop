@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 reyphilipp <reyphilipp@freenet.de> 1565721473 +0200	branch: Created from HEAD
+7a1c0b252bb57c52b502f19dfe1ad1adab5be5e4 f84a1a0c64066ffca8b54eba0747a18fc58206d1 reyphilipp <reyphilipp@freenet.de> 1565722063 +0200	commit: Add components addressList
+f84a1a0c64066ffca8b54eba0747a18fc58206d1 02db30bafed6015313854f4d6846e93f25c0408b reyphilipp <reyphilipp@freenet.de> 1565725970 +0200	commit: Add AddresDetails
+02db30bafed6015313854f4d6846e93f25c0408b dabb6158e285975baeed1feb2476a02faad55e10 reyphilipp <reyphilipp@freenet.de> 1565727528 +0200	commit: Add DeleteModal
+dabb6158e285975baeed1feb2476a02faad55e10 1f836e189636e34199da83d3cc1a64c30a97395a reyphilipp <reyphilipp@freenet.de> 1565728142 +0200	commit: End Design

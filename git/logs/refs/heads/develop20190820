@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 1f836e189636e34199da83d3cc1a64c30a97395a reyphilipp <reyphilipp@freenet.de> 1566325578 +0200	branch: Created from HEAD
+1f836e189636e34199da83d3cc1a64c30a97395a 483da7a4aff262f67496f4c0e1f5725fc5db504b reyphilipp <reyphilipp@freenet.de> 1566325692 +0200	commit: Add Model
+483da7a4aff262f67496f4c0e1f5725fc5db504b 52d31de8141124f16b969e9b970b034dfbe021a4 reyphilipp <reyphilipp@freenet.de> 1566326946 +0200	commit: Add Service
+52d31de8141124f16b969e9b970b034dfbe021a4 542a3066a22cfbca37ecd49c720f7a1d87e67f4f reyphilipp <reyphilipp@freenet.de> 1566330691 +0200	commit: Edit Details and List
+542a3066a22cfbca37ecd49c720f7a1d87e67f4f b5185632a83d687092eef449b1816403f2eb0f27 reyphilipp <reyphilipp@freenet.de> 1566335193 +0200	commit (amend): Finish
