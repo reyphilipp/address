@@ -1,3 +1,5 @@
+import { LoginComponent } from './components/login/login.component';
+import { AuthGuardService } from './services/auth-guard.service';
 import { AddressListComponent } from './components/address-list/address-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -7,22 +9,37 @@ import { AddressDetailComponent } from './components/address-detail/address-deta
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'list',
-    pathMatch: 'full'
+    canActivate: [AuthGuardService],
+    children: [
+      {
+        path: 'list',
+        component: AddressListComponent
+      },
+      {
+        path: 'list/new',
+        component: AddressDetailComponent
+      },
+      {
+        path: 'list/:addressId',
+        component: AddressDetailComponent
+      },
+      {
+        path: '',
+        redirectTo: 'list',
+        pathMatch: 'full'
+      },
+    ]
   },
   {
-    path: 'list',
-    component: AddressListComponent
+    path: 'login',
+    component: LoginComponent
   },
   {
-    path: 'list/new',
-    component: AddressDetailComponent
-  },
-  {
-    path: 'list/:addressId',
-    component: AddressDetailComponent
+    path: '**',
+    component: LoginComponent
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
