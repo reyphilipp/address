@@ -1,7 +1,7 @@
-import { BackendService } from './../services/backend.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Address } from 'src/app/models/address';
+import { BackendService } from 'src/app/services/backend.service';
 
 @Component({
   selector: 'app-address-list',

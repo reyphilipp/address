@@ -1,4 +1,3 @@
-import { BackendService } from './../services/backend.service';
 import { Component, OnInit } from '@angular/core';
 import { DeleteModalComponent } from '../delete-modal/delete-modal.component';
 import { MatDialog } from '@angular/material/dialog';
@@ -8,6 +7,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
 import { switchMap } from 'rxjs/operators';
+import { BackendService } from 'src/app/services/backend.service';
 @Component({
   selector: 'app-address-detail',
   templateUrl: './address-detail.component.html',
