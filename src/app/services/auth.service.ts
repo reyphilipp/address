@@ -19,7 +19,7 @@ export class AuthService {
   login(username: string, password: string) {
     this.http.post<UserResponse>(`${this.authUrl}login/`, {username, password}).subscribe(data => {
       this.user = data.user;
-
+      console.log(data);
       localStorage.setItem('token', data.token);
     });
   }

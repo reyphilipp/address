@@ -1,3 +1,4 @@
+import { AuthService } from './services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Address-app';
+
+  constructor(private auth: AuthService) {
+
+  }
+
+  login() {
+    this.auth.login('batman', 'Sommer007');
+  }
+
+  logout() {
+    this.auth.logout();
+  }
 }
