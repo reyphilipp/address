@@ -10,14 +10,17 @@ import { AddressDetailComponent } from './components/address-detail/address-deta
 import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './token-interceptor';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddressListComponent,
     AddressDetailComponent,
-    DeleteModalComponent
+    DeleteModalComponent,
+    LoginComponent
   ],
   entryComponents: [
     DeleteModalComponent
@@ -39,7 +42,13 @@ import { HttpClientModule } from '@angular/common/http';
     MatDialogModule,
     MatSnackBarModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
