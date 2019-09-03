@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   baseUrl: 'http://127.0.0.1:8000/api/v1/',
-  authUrl: 'http://127.0.0.1:8000/rest-auth/'
+  authUrl: 'http://127.0.0.1:8000/rest-auth/',
+  startUrl: '/',
+  loginUrl: '/login'
 };
 
 /*

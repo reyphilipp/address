@@ -56,6 +56,7 @@ export class AddressDetailComponent implements OnInit {
   onUpdate(form: FormGroup): void {
     console.log('update', form.value);
     this.backend.updateAddress(form.value).subscribe(result => {
+      this.router.navigate(['/list']);
       this.snackbar.open('Address save successfully!', 'update', {duration: 3000});
     });
   }
