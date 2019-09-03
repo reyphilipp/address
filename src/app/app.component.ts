@@ -13,10 +13,6 @@ export class AppComponent {
 
   }
 
-  login() {
-    this.auth.login('batman', 'Sommer007');
-  }
-
   logout() {
     this.auth.logout();
   }
